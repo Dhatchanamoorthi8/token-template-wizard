@@ -270,7 +270,8 @@ const CertificateFormatCreator = () => {
       return updated;
     });
     setFormatTemplate((prev) => {
-      const updated = prev.replaceAll(`{{${key}}}`, "");
+      // Replace replaceAll with regex-based replace for compatibility
+      const updated = prev.replace(new RegExp(`{{${key}}}`, 'g'), "");
       return updated;
     });
   };
