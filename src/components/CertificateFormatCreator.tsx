@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -18,7 +17,7 @@ import { showSwal } from "./ui/swal-config";
 // Mock config and auth context - replace with your actual implementations
 const config = {
   Calibmaster: {
-    URL: process.env.REACT_APP_API_URL || "http://localhost:3001"
+    URL: import.meta.env.VITE_API_URL || "http://localhost:3001"
   }
 };
 
