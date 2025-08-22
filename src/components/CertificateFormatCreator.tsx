@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -50,7 +51,7 @@ const CertificateFormatCreator = () => {
 
   const defaultValues = () => {
     const now = new Date();
-    const currentYear = parseInt("2025") || now.getFullYear();
+    const currentYear = now.getFullYear();
     const yearShort = currentYear.toString().slice(-2);
 
     return {
