@@ -149,4 +149,37 @@
   .preview-card {
     @apply p-6 bg-gradient-to-br from-primary/5 to-secondary/5 border-2 border-primary/20 rounded-xl;
   }
+
+  /* SweetAlert2 Modal Fixes */
+  .swal-wide-popup {
+    @apply max-w-lg !important;
+    min-width: 400px !important;
+  }
+
+  .swal-input-fixed {
+    @apply !w-full !max-w-full !box-border;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Fix SweetAlert2 select dropdown */
+  .swal2-select {
+    @apply !w-full !max-w-full !box-border;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Fix SweetAlert2 input container */
+  .swal2-input-container {
+    @apply !w-full !max-w-full;
+  }
+
+  .swal2-popup {
+    @apply !overflow-visible;
+  }
+
+  .swal2-content {
+    @apply !overflow-visible;
+  }
 }
